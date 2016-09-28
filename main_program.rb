@@ -1,6 +1,28 @@
-system "clear"
+class Vehicle
+	def initialize(year, make, model)
+		@year = year
+		@make = make
+		@model = model
+	end
+
+	def year
+		@year
+	end
+
+	def make
+		@make
+	end
+
+	def model
+		@model
+	end
+end
+
+my_awesome_car = Vehicle.new(2013, "Toyota", "Tacoma")
+puts my_awesome_car.year
 
 def display_menu
+system "clear"
 puts "*************************************************"
 puts "****  Welcome to the Car Rental Application  ****"
 puts "*************************************************"
@@ -19,5 +41,6 @@ option = gets.chomp.to_i
 			else puts "Invalid selection, please choose from menu"
 	end
 end
-display_menu
+
+#display_menu
 
